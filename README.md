@@ -9,7 +9,7 @@ composer require eddy/ip2region
 ```
 
 ## 使用方法
-```
+```php
 //在本项目的 src/data 目录下已经生成好了一份 ip2region.db 文件，可以复制到你的项目直接使用。当然你也可以自己生成一份最新的文件。
 $ip2region_db_file_location = 'ip2region.db';
 $client = new eddy\Ip($ip2region_db_file_location);

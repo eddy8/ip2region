@@ -22,7 +22,7 @@ class Ip
         }
 
         $ip = trim($arguments[0]);
-        if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
+        if (filter_var($ip, FILTER_VALIDATE_IP) === false) {
             throw new \InvalidArgumentException("{$arguments[0]} 无效IP地址");
         }
 
